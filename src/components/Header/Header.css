@@ -1,0 +1,33 @@
+.Nav {
+    display: flex;
+    flex-direction: column;
+    /*height: 70px;*/
+    width: 100vw;
+    background-color: #410679;
+    text-align: center;
+}
+
+.Nav__container {
+    margin: 0 auto 10px;
+    width: 80%;
+}
+
+.Nav__heading {
+    color: white;
+}
+
+.Nav__item {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+    .Nav__item {
+        font-size: 16px;
+    }
+
+    .Nav__heading {
+        font-size: 22px;
+    }
+}

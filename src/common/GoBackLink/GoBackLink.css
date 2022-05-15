@@ -1,0 +1,21 @@
+.GoBackLink {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 14px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.GoBackLink:hover {
+    background-color: #5f09af;
+}
+
+@media only screen and (min-width: 600px) {
+    .GoBackLink {
+        margin-top: 15px;
+        font-size: 17px;
+    }
+}

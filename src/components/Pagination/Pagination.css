@@ -1,0 +1,19 @@
+.Pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagination__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    margin: 1px 1px;
+    padding: 4px 4px;
+    text-decoration: none;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}

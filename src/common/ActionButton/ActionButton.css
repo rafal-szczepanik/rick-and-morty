@@ -1,0 +1,18 @@
+.Action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 10px;
+}
+
+.Action-button--disabled {
+    background-color: #d9bbf5;
+}
+
+@media only screen and (min-width: 600px) {
+    .Action-button {
+        font-size: 13px;
+    }
+}

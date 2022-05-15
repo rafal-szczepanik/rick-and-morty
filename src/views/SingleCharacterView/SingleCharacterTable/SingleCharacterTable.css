@@ -1,0 +1,12 @@
+.SingleCharacterTable{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+}
+
+@media only screen and (min-width: 600px) {
+    .SingleCharacterTable {
+        font-size: 15px;
+    }
+}
