@@ -5,7 +5,6 @@ import {Spinner} from "../../common/Spinner/Spinner";
 import {SingleCharacterTable} from "./SingleCharacterTable/SingleCharacterTable";
 import {GoBackLink} from "../../common/GoBackLink/GoBackLink";
 import {NotFound} from "../NotFound/NotFound";
-import {ActionButton} from "../../common/ActionButton/ActionButton";
 
 export const SingleCharacterView = () => {
   const [characterInfo, setCharacterInfo] = useState(null);
