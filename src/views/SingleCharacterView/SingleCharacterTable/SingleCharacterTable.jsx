@@ -1,4 +1,5 @@
 import React from 'react';
+import {ActionButton} from "../../../common/ActionButton/ActionButton";
 
 import './SingleCharacterTable.css';
 
@@ -42,6 +43,10 @@ export const SingleCharacterTable = ({characterInfo}) => {
         <tr>
           <th>Status</th>
           <td>{characterInfo.status}</td>
+        </tr>
+        <tr>
+          <th>Action</th>
+          <td><ActionButton type="add" character={characterInfo}/></td>
         </tr>
       </tbody>
     </table>

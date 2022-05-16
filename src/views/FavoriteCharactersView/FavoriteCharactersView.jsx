@@ -9,25 +9,18 @@ export const FavoriteCharactersView = () => {
   useWebsiteTitle('Favourites Characters');
 
   const [isSorted, setIsSorted] = useState(false);
-
-
+  
   const sortedByIdList = [...favouriteList].sort((a, b) => a.id - b.id);
   const sortedByNameList = [...sortedByIdList].sort((a, b) => a.name.localeCompare(b.name));
-
-  const sortList = () => {
-    setIsSorted((prevState) => !prevState);
-  };
 
   return (
     <div>
       <h1>Your Favourite Rick and Morty Characters </h1>
-      <SortButton
-        isSorted={isSorted}
-        sortList={sortList}/>
+      <SortButton isSorted={isSorted} onClick={() => setIsSorted((prevState) => !prevState)}/>
       {sortedByIdList.length === 0
         ? <h2>No favourites characters in your list.</h2>
         : <CharactersTable
-          characters={isSorted ? sortedByIdList : sortedByNameList}
+          characters={!isSorted ? sortedByIdList : sortedByNameList}
           type="remove"
         />}
     </div>
