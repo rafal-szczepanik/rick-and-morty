@@ -4,9 +4,9 @@ import {useParams} from "react-router-dom";
 import {Spinner} from "../../common/Spinner/Spinner";
 import {SingleCharacterTable} from "../SingleCharacterView/SingleCharacterTable/SingleCharacterTable";
 import {NotFound} from "../NotFound/NotFound";
+import {GoBackLink} from "../../common/GoBackLink/GoBackLink";
 
 import './FavouriteCharactersDetailsView.css';
-import {GoBackLink} from "../../common/GoBackLink/GoBackLink";
 
 export const FavouriteCharactersDetailsView = () => {
   const [characterInfo, setCharacterInfo] = useState(null);
