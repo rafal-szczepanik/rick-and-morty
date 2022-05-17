@@ -7,6 +7,29 @@
     font-size: 20px;
 }
 
+.Characters-List__link {
+    margin: 10px auto;
+    display: flex;
+    padding: 3px 7px;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    max-width: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 13px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.Characters-List__link:hover {
+    background-color: blueviolet;
+    color: white;
+
+}
+
 @media only screen and (min-width: 600px) {
     .Characters-List {
         font-size: 15px;
@@ -15,5 +38,9 @@
 
     .Characters-List__heading {
         font-size: 25px;
+    }
+
+    .Characters-List__link {
+        font-size: 16px;
     }
 }

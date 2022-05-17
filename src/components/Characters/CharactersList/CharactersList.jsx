@@ -18,7 +18,6 @@ export const CharactersList = () => {
   useWebsiteTitle('Rick & Morty');
 
   useEffect(() => {
-
     (async () => {
       const res = await fetch(url);
       const data = await res.json();
@@ -31,7 +30,7 @@ export const CharactersList = () => {
     return <Spinner/>;
   }
 
-  const handleClick = (url) => {
+  const handleClick = (url, bool) => {
     setUrl(url);
   };
 
@@ -53,7 +52,7 @@ export const CharactersList = () => {
         totalPages={info.pages}
         nextPage={info.next}
         prevPage={info.prev}
-        handleSetUrl={handleClick}
+        handleClick={handleClick}
       />
     </div>
   );

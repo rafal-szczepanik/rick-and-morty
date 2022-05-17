@@ -12,22 +12,24 @@ export const CharactersTable = ({characters, actionType}) => {
         ? setTableColumn(true)
         : setTableColumn(false);
     };
+
     window.addEventListener('resize', widthHandler);
+
     return () => {
       window.removeEventListener('resize', widthHandler);
     };
   }, []);
 
   return (
-    <table className="CharactersTable">
+    <table className="Characters-table">
       <thead>
         <tr>
           <th>#</th>
-          <th className="CharactersTable__thead-cell">Avatar</th>
-          <th className="CharactersTable__thead-cell">Name (more info)</th>
+          <th className="Characters-table__thead-cell">Avatar</th>
+          <th className="Characters-table__thead-cell">Name (more info)</th>
           {tableColumn && <th>IsAlive?</th>}
-          <th className="CharactersTable__thead-cell">Species</th>
-          <th className="CharactersTable__thead-cell">Action</th>
+          <th className="Characters-table__thead-cell">Species</th>
+          <th className="Characters-table__thead-cell">Action</th>
         </tr>
       </thead>
       <tbody>
