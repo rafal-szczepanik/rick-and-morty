@@ -3,21 +3,21 @@ import {Link} from "react-router-dom";
 
 import './Pagination.css';
 
-export const Pagination = ({currentPage, totalPages, handleSetUrl, prevPage, nextPage}) => {
+export const Pagination = ({currentPage, totalPages, handleClick, prevPage, nextPage}) => {
   const pageUrl = 'https://rickandmortyapi.com/api/character?page=';
 
   const pages = [...Array(totalPages).keys()].map(key => key + 1);
 
   const handlePaginationClick = (num) => {
-    handleSetUrl(`${pageUrl}${num}`);
+    handleClick(`${pageUrl}${num}`);
   };
 
   const handlePaginationPrevClick = () => {
-    prevPage && handleSetUrl(prevPage);
+    prevPage && handleClick(prevPage);
   };
 
   const handlePaginationNextClick = () => {
-    nextPage && handleSetUrl(nextPage);
+    nextPage && handleClick(nextPage);
   };
 
   return (
@@ -44,7 +44,7 @@ export const Pagination = ({currentPage, totalPages, handleSetUrl, prevPage, nex
         onClick={handlePaginationNextClick}
         to={`/characters`}
       >
-        next{`>>>`}
+        next >>>
       </Link>
     </div>
   );
