@@ -1,5 +1,18 @@
+.Table-row__image {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%
+}
+
 .Table-row__more-info-link {
     text-decoration: none;
     color: blueviolet;
     cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .Table-row__image {
+        height: 45px;
+        width: 45px;
+    }
 }
