@@ -5,6 +5,6 @@ export const SortButton = ({onClick, isSorted}) => (
   <button
     className="Sort-button"
     onClick={onClick}
-  >{!isSorted ? ' Sort by Name' : 'Sort by ID'}
+  >{!isSorted ? 'Sort this page by name' : 'Sort this page by ID'}
   </button>
 );
