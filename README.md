@@ -2,6 +2,8 @@
 
 Project created for the recruitment purposes of the daftCode company
 
+Want to see what it looks like? Try this link: [https://rick-morty-characters-list.netlify.app/](https://rick-morty-characters-list.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
