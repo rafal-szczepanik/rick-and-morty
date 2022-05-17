@@ -13,12 +13,13 @@
 
 .Nav__heading {
     color: white;
+    font-size: 20px;
 }
 
 .Nav__item {
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .Nav__active-link {
@@ -31,6 +32,6 @@
     }
 
     .Nav__heading {
-        font-size: 25px;
+        font-size: 28px;
     }
 }
