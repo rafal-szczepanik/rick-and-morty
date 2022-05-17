@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/DaftCode-recruitment-task/static/css/main.08e25040.css",
-    "main.js": "/DaftCode-recruitment-task/static/js/main.1631b6a4.js",
+    "main.css": "/DaftCode-recruitment-task/static/css/main.4ba509ec.css",
+    "main.js": "/DaftCode-recruitment-task/static/js/main.7144e2ea.js",
     "index.html": "/DaftCode-recruitment-task/index.html",
-    "main.08e25040.css.map": "/DaftCode-recruitment-task/static/css/main.08e25040.css.map",
-    "main.1631b6a4.js.map": "/DaftCode-recruitment-task/static/js/main.1631b6a4.js.map"
+    "main.4ba509ec.css.map": "/DaftCode-recruitment-task/static/css/main.4ba509ec.css.map",
+    "main.7144e2ea.js.map": "/DaftCode-recruitment-task/static/js/main.7144e2ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.08e25040.css",
-    "static/js/main.1631b6a4.js"
+    "static/css/main.4ba509ec.css",
+    "static/js/main.7144e2ea.js"
   ]
 }
