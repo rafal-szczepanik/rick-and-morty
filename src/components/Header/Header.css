@@ -21,6 +21,10 @@
     font-size: 12px;
 }
 
+.Nav__active-link {
+    border-bottom: 1px solid #DFD7E7FF
+}
+
 @media only screen and (min-width: 600px) {
     .Nav__item {
         font-size: 18px;

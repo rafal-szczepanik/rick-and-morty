@@ -14,7 +14,7 @@ export const Header = () => {
           className="Nav__item"
           style={colorOfLink}
           to="/characters">All Characters List </NavLink>
-        <span style={{color:'white'}}>|</span>
+        <span style={{color: 'white'}}>|</span>
         <NavLink
           className="Nav__item"
           to="/favourite-characters"
