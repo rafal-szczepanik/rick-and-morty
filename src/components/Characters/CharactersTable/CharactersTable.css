@@ -1,11 +1,22 @@
-.Table {
-    width: 100%;
+.CharactersTable {
+    margin: 0 auto;
     text-align: center;
+    width: 100%;
     font-size: 11px;
 }
 
+.CharactersTable__thead-cell {
+    min-width: 50px;
+}
+
+@media (min-width: 350px) {
+    .CharactersTable__thead-cell {
+        min-width: 70px;
+    }
+}
+
 @media only screen and (min-width: 600px) {
-    .Table {
-        font-size: 13px;
+    .CharactersTable {
+        font-size: 15px;
     }
 }

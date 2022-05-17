@@ -1,5 +1,6 @@
-.SingleCharacterTable{
-    width: 100%;
+.SingleCharacterTable {
+    margin: 15px auto;
+    width: 90%;
     text-align: center;
     padding: 5px;
     font-size: 13px;

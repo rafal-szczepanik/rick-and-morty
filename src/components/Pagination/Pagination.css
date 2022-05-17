@@ -1,8 +1,18 @@
 .Pagination {
+    margin-bottom: 10px;;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.Pagination__prev-next-item,
+.Pagination__item {
+    text-decoration: none;
+    color: blueviolet;
+    margin: 1px 1px;
+    padding: 4px 4px;
 }
 
 .Pagination__item {
@@ -11,9 +21,22 @@
     justify-content: center;
     width: 10px;
     height: 10px;
-    margin: 1px 1px;
-    padding: 4px 4px;
-    text-decoration: none;
-    color: blueviolet;
     border: 1px solid blueviolet;
+}
+
+.Pagination__item--active {
+    background-color: blueviolet;
+    color: white;
+}
+
+.Pagination__item:hover {
+    color: white;
+    background-color: blueviolet;
+}
+
+@media only screen and (min-width: 600px) {
+    .Pagination__item {
+        padding: 6px 6px;
+        font-size: 14px;
+    }
 }
