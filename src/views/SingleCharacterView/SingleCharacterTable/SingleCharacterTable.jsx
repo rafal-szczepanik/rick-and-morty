@@ -7,11 +7,11 @@ export const SingleCharacterTable = ({characterInfo}) => {
   const {status, origin, name, gender, species, id, location, episode, type} = characterInfo;
 
   return (
-    <table className="SingleCharacterTable">
+    <table className="SingleCharacter-table">
       <tbody>
         <tr>
           <th>#</th>
-          <td className="SingleCharacterTable__cell">{id}</td>
+          <td className="SingleCharacter-table__cell">{id}</td>
         </tr>
         <tr>
           <th>Name</th>
