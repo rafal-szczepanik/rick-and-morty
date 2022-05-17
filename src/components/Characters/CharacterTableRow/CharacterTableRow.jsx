@@ -4,15 +4,14 @@ import {ActionButton} from "../../../common/ActionButton/ActionButton";
 
 import './CharacterTableRow.css';
 
-export const CharacterTableRow = ({character, characters, type}) => {
+export const CharacterTableRow = ({character, actionType, tableColumn}) => {
   const {image, species, id, name, status} = character;
 
   return (
     <tr>
       <td>{id}</td>
       <td>
-        <img
-          style={{height: '50px', width: '50px', borderRadius: '50%'}}
+        <img className='Table-row__image'
           src={image}
           alt={`Character ${name}`}
         />
@@ -24,12 +23,12 @@ export const CharacterTableRow = ({character, characters, type}) => {
           {name}
         </Link>
       </td>
-      <td>{status}</td>
+      {tableColumn && <td>{status}</td>}
       <td>{species}</td>
       <td>
         <ActionButton
           character={character}
-          type={type}
+          actionType={actionType}
         />
       </td>
     </tr>

@@ -3,7 +3,7 @@ import {GlobalContext} from "../../context/GlobalState";
 
 import './ActionButton.css';
 
-export const ActionButton = ({character, type}) => {
+export const ActionButton = ({character, actionType}) => {
   const {addToFavouriteList, favouriteList, removeFromFavouriteList} = useContext(GlobalContext);
 
   let storedCharacter = favouriteList.find(obj => obj.id === character.id);
@@ -11,18 +11,17 @@ export const ActionButton = ({character, type}) => {
 
   return (
     <>
-      {type === 'add' && <button
+      {actionType === 'add' && <button
         className={`Action-button ${characterDisabled && "Action-button--disabled"}`}
         disabled={characterDisabled}
         onClick={() => addToFavouriteList(character)}
-
       >
-        Add to favourite
+        {characterDisabled ? 'Already added' : 'Add to favourite'}
       </button>}
-      {type === 'remove' && <button
+      {actionType === 'remove' && <button
         className="Action-button"
         onClick={() => removeFromFavouriteList(character.id)}>
-        Remove from favourite
+        Remove
       </button>}
     </>
 

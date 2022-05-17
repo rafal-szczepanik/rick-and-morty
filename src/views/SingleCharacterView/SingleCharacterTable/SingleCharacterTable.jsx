@@ -4,49 +4,50 @@ import {ActionButton} from "../../../common/ActionButton/ActionButton";
 import './SingleCharacterTable.css';
 
 export const SingleCharacterTable = ({characterInfo}) => {
+  const {status, origin, name, gender, species, id, location, episode, type} = characterInfo;
 
   return (
     <table className="SingleCharacterTable">
       <tbody>
         <tr>
           <th>#</th>
-          <td>{characterInfo.id}</td>
+          <td className="SingleCharacterTable__cell">{id}</td>
         </tr>
         <tr>
           <th>Name</th>
-          <td>{characterInfo.name}</td>
+          <td>{name}</td>
         </tr>
         <tr>
           <th>Species</th>
-          <td>{characterInfo.species}</td>
+          <td>{species}</td>
         </tr>
         <tr>
           <th>Gender</th>
-          <td>{characterInfo.gender}</td>
+          <td>{gender}</td>
         </tr>
         <tr>
           <th>Origin</th>
-          <td>{characterInfo.origin.name}</td>
+          <td>{origin.name}</td>
         </tr>
         <tr>
           <th>Current location</th>
-          <td>{characterInfo.location.name}</td>
+          <td>{location.name}</td>
         </tr>
         <tr>
-          <th>Number of Episodes</th>
-          <td>{characterInfo.episode.length}</td>
+          <th>In how many episodes</th>
+          <td>{episode.length}</td>
         </tr>
         <tr>
           <th>Type</th>
-          <td>{!characterInfo.type ? 'unknown' : characterInfo.type}</td>
+          <td>{!type ? 'unknown' : type}</td>
         </tr>
         <tr>
           <th>Status</th>
-          <td>{characterInfo.status}</td>
+          <td>{status}</td>
         </tr>
         <tr>
           <th>Action</th>
-          <td><ActionButton type="add" character={characterInfo}/></td>
+          <td><ActionButton actionType="add" character={characterInfo}/></td>
         </tr>
       </tbody>
     </table>

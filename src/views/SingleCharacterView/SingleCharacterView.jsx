@@ -6,6 +6,8 @@ import {SingleCharacterTable} from "./SingleCharacterTable/SingleCharacterTable"
 import {GoBackLink} from "../../common/GoBackLink/GoBackLink";
 import {NotFound} from "../NotFound/NotFound";
 
+import './SingleCharacterView.css'
+
 export const SingleCharacterView = () => {
   const [characterInfo, setCharacterInfo] = useState(null);
 
@@ -32,12 +34,12 @@ export const SingleCharacterView = () => {
   }
 
   return (
-    <>
-      <img style={{padding: '15px 15px'}} src={characterInfo.image} alt={characterInfo.name}/>
+    <div className='Single-character'>
+      <img className='Single-character__image' src={characterInfo.image} alt={characterInfo.name}/>
       <SingleCharacterTable
         characterInfo={characterInfo}
       />
       <GoBackLink/>
-    </>
+    </div>
   );
 };
