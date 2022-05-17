@@ -22,7 +22,9 @@ export class ErrorBoundary extends Component {
 
       return (
         <div className="alert alert-danger">
-          An error has occurred: {this.state.error.toString()}
+          <h2>
+            An error has occurred: {this.state.error.toString()}
+          </h2>
         </div>
       );
     }
